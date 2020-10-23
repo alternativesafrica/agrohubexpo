@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+body {
+    font-family: $body-font;
+}
+
+.home {
+    .expo-hero {
+        background: $expo-green;
+    }
+    .navbar-brand {
+        // display: none;
+    }
+    .navbar-nav {
+        margin-left: 0 !important;
+    }
+}
+
+.navbar-nav {
+    .nav-link {
+        font-weight: 800;
+        font-size: 22px;
+    }
+} 
