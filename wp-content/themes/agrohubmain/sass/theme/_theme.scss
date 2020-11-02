@@ -1,24 +1,297 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@200;300;400;600;700;800;900&display=swap');
 
 body {
     font-family: $body-font;
 }
 
-.home {
-    .expo-hero {
-        background: $expo-green;
-    }
+h1 {
+	@include media-breakpoint-down(xs) {
+		font-size: 32px;
+	}
+}
+
+h2 {
+	@include media-breakpoint-down(xs) {
+		font-size: 20px;
+	}
+}
+
+h3 {
+	@include media-breakpoint-down(xs) {
+		font-size: 18px;
+	}
+}
+
+
+.navbar {
+    min-height: 80px;
     .navbar-brand {
-        // display: none;
+        img {
+            width: 100px;
+        }
     }
-    .navbar-nav {
-        margin-left: 0 !important;
+    &.stickybg {
+        background-color: #ffffff !important;
+        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 40, 86, 0.3);
+        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 40, 86, 0.3);
+        box-shadow: 0px 0px 5px 0px rgba(0, 40, 86, 0.3);
+    }
+    .navbar-toggler {
+        border: 0;
     }
 }
+
+
+
+.home {
+    .expo-hero {
+        background-image: url("../img/farm-storage-hero.jpg");
+        background-size: cover;
+        background-position: 0% 60%;
+        position: relative;
+        margin-top: 80px;
+        text-align: center;
+        padding: $spacing-lg 0;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0; 
+            right: 0;
+            top: 0; 
+            bottom: 0;
+            background: rgba(2, 20, 5, 0.5),
+        }
+        .ag-header-logo {
+            // background: $white;
+            padding: $spacing-xl;
+            img {
+                width: 520px;
+            }
+            @include media-breakpoint-down(xs) {
+                height: 160px;
+                padding: $spacing-xl $spacing;
+            }
+        }
+        .ag-square-intro {
+            padding: $spacing-lg;
+            @include media-breakpoint-down(xs) {
+                padding: $spacing-lg $spacing-sm;
+            }
+            h1 {
+                color: $white;
+                font-weight: 800;
+                font-size: 3.5rem;
+                @include media-breakpoint-down(md) {
+                    font-size: 2.7rem !important;
+                }
+                @include media-breakpoint-down(xs) {
+                    font-size: 2rem !important;
+                }
+            }
+        }
+    }
+    .expo-sectors {
+        .ag-home-squares {
+            .ag-home-square {
+                position: relative;
+                overflow: hidden;
+                background: $expo-blue;
+                color: $white;
+                &.ag-date {
+                    width: 100%;
+                    text-align: center;
+                }
+                .ag-square-content {
+                    padding: $spacing-xl $spacing-sm;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .ag-square-icon-block {
+                        text-align: center;
+                        .ag-square-icon {
+                            display: block;
+                            text-align: center;
+                            width: 60px;
+                            margin: 0 auto;
+                        }
+                        .ag-icon-title {
+                            text-transform: uppercase;
+                            margin-top: 10px;
+                            line-height: 16px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+                &.ag-clear-box {
+                    background: transparent;
+                    @include media-breakpoint-down(xs) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .expo-brief {
+        background: $white;
+        .ag-flags {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top: 1px solid $gray-300;
+            border-bottom: 1px solid $gray-300;
+            padding: $spacing-md 0;
+            .ag-flag {
+                padding: $spacing-lg $spacing;
+                img {
+                    width: 60px;
+                }
+                // &:last-of-type {
+                //     border-left: 1px solid $gray-300;
+                // }
+            }
+        }
+        .ag-motto {
+            text-align: center;
+            padding: 60px 100px;
+            border-bottom: 1px solid $gray-300;
+            @include media-breakpoint-down(xs) {
+                padding: 60px 30px;
+            }
+            h3 {
+                @include media-breakpoint-down(xs) {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+        .ag-hosts {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .ag-host {
+                padding: $spacing-lg;
+                img {
+                    width: 100px;
+                }
+            }
+        }
+        .ag-timer {
+            border-left: 1px solid $gray-300;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @include media-breakpoint-down(xs) {
+                border-left: 0;
+                border-top: 1px solid $gray-300;
+            }
+            .ag-countdown {
+                margin: $spacing-sm auto;
+                font-size: 2rem;
+                font-weight: 500;
+                text-align: center;
+                >div {
+                    float: left;
+                    min-width: 120px;
+                    margin: 0px 10px;
+                    font-size: 4rem;
+                    font-weight: 700;
+                    line-height: 1.2;
+                    color: $expo-dark;
+                    @include media-breakpoint-down(xs) {
+                        min-width: 60px;
+                        margin: 0px 10px;
+                        font-size: 2rem;
+                    }
+                }
+                span {
+                    position: relative;
+                    display: block;
+                    font-size: 17px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    font-weight: 100;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+    }
+    .expo-attend {
+        background-image: url("../img/sunrise-farm-fields.jpg");
+        background-color: $expo-blue;
+        background-size: cover;
+        padding: $spacing-lg 0;
+        .ag-why-squares {
+            .ag-why-square {
+                position: relative;
+                width: calc(100% / 3);
+                padding-bottom: calc(100% / 3);
+                overflow: hidden;
+                background: $expo-blue;
+                color: $white;
+                &.ag-date {
+                    width: 100%;
+                    text-align: center;
+                }
+                @include media-breakpoint-down(xs) {
+                    width: 50%;
+                    padding-bottom: 50%;
+                }
+                h2 {
+                    font-weight: 100;
+                    &.text-bold {
+                        font-size: 2.5rem;
+                    }
+                }
+                .ag-square-content {
+                    position: absolute;
+                    height: 100%;
+                    width: 100%;
+                    padding: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    .ag-square-icon-block {
+                        text-align: center;
+                        .ag-square-icon {
+                            display: block;
+                            text-align: center;
+                            width: 60px;
+                            margin: 0 auto;
+                        }
+                        .ag-icon-title {
+                            text-transform: uppercase;
+                            margin-top: 10px;
+                            line-height: 16px;
+                            font-weight: 700;
+                        }
+                    }
+                }
+                &.ag-clear-box {
+                    background: transparent;
+                    @include media-breakpoint-down(xs) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    .section-heading {
+        font-weight: 800;
+        text-align: center;
+        padding: $spacing-lg 0;
+    }
+}
+
+
+
 
 .navbar-nav {
     .nav-link {
         font-weight: 800;
         font-size: 22px;
+        padding: 1rem !important;
     }
-} 
+}
+
+.text-bold {
+    font-weight: 700;
+}

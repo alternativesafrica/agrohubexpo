@@ -6,8 +6,58 @@
 $primary: #03455C; 
 
 $expo-blue: #03455C;
+$expo-dark: #1F2732;
 $expo-lightblue: #11ADE2;
 $expo-green: #70B044;
 $expo-yellow: #F3B117;
 
-$body-font: 'Nunito Sans', sans-serif;
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #868e96 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$body-font: 'Barlow', sans-serif;
+
+// Spacing
+
+$spacing-xs: 5px;
+$spacing: 10px;
+$spacing-sm: 15px;
+$spacing-md: 20px;
+$spacing-lg: 30px;
+$spacing-xl: 40px;
+$spacing-xxl: 50px;
+$spacing-max: 60px;
+
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1240px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints, "$grid-breakpoints");
+
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 750px,
+  lg: 980px,
+  xl: 1200px
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");

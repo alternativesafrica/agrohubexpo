@@ -1,5 +1,10 @@
+/* Before your custom variables file, import Bootstrap functions */
+@import "../node_modules/bootstrap/scss/functions";
+
 @import "theme/theme_variables";  // <-------- Add your variables into this file. Also add variables to overwrite Bootstrap or UnderStrap variables here
-@import "assets/bootstrap4";      // <-------- Loads Bootstrap4
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";    // <-------- Loads Bootstrap4
 @import "understrap/understrap";  // <-------- Loads the UnderStrap defaults. Just a few classes to incorporate BS in WP
 @import "understrap/woocommerce"; // <-------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
 
@@ -8,7 +13,8 @@
 @import "assets/underscores";     // <-------- Underscores media styles
 
 // Any additional imported files //
-@import "theme/theme";            // <-------- That's where you can add your own design. Thats your part!
+@import "theme/theme";        
+@import "theme/classes";        
 @import "theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
 @import "theme/forms";            // <-------- That's where you can add your own design. Thats your part!
 @import "theme/hero";            // <-------- That's where you can add your own design. Thats your part!
