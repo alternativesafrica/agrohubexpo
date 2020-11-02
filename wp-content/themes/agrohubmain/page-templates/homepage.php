@@ -26,7 +26,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<?php get_template_part( 'global-templates/hero' ); ?>
 					<div class="ag-square-intro">
 						<h1>A Virtual Event for Agro-Processors</h1>
-						<a class="btn btn-primary" href="#" role="button">Find out more</a>
+						<a class="btn btn-primary btn-lg" href="#" role="button">Register Now</a>
 					</div>
 					
 				</div>

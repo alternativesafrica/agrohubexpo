@@ -2,6 +2,7 @@
 
 body {
     font-family: $body-font;
+    margin-top: 80px;
 }
 
 h1 {
@@ -22,6 +23,13 @@ h3 {
 	}
 }
 
+.btn-primary {
+    border-radius: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: $expo-dark;
+    background-color: $expo-yellow !important;
+}
 
 .navbar {
     min-height: 80px;
@@ -49,7 +57,6 @@ h3 {
         background-size: cover;
         background-position: 0% 60%;
         position: relative;
-        margin-top: 80px;
         text-align: center;
         padding: $spacing-lg 0;
         &:before {
@@ -195,7 +202,7 @@ h3 {
                     font-size: 4rem;
                     font-weight: 700;
                     line-height: 1.2;
-                    color: $expo-dark;
+                    color: $expo-blue;
                     @include media-breakpoint-down(xs) {
                         min-width: 60px;
                         margin: 0px 10px;
@@ -294,4 +301,13 @@ h3 {
 
 .text-bold {
     font-weight: 700;
+}
+
+.form-wrapper {
+    background: $gray-200;
+    .form-row {
+        .content-area{
+            margin: 0 auto;
+        }
+    }
 }
