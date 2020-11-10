@@ -15,6 +15,49 @@
             
             .wsf-section {
                 margin-bottom: $spacing-lg;
+                &.no-padding-border{ 
+                    .wsf-grid {
+                        background: none;
+                        padding: 0;
+                        border: 0;
+                        .wsf-tile {
+                            padding: 0;
+                        }
+                    }
+                }
+                &.ag-stall-packages{ 
+                    .wsf-grid {
+                        background: $white;
+                        padding: 0;
+                        border: 0;
+                        &:first-of-type {
+                            margin-right: $spacing;
+                        }
+                        .wsf-tile {
+                            background: $white;
+                            padding: $spacing-md $spacing-lg $spacing;
+                            position: relative;
+                            &.ag-package-radio {
+                                background: $expo-yellow;
+                                margin-bottom: 0;
+                                .wsf-label {
+                                    font-size: 1.3rem !important;
+                                    line-height: 1.3rem;
+                                }
+                            }
+                            &.ag-package-title {
+                                min-height: 240px;
+                            }
+                            &:after {
+                                position: absolute;
+                                background-image: url("../img/ag-geometric-long.svg");
+                                background-size: cover;
+                                height: $spacing-sm;
+                                bottom: -10px;
+                            }
+                        }
+                    }
+                }
                 .wsf-grid {
                     background: $white;
                     padding: $spacing-lg $spacing-md $spacing $spacing-md;

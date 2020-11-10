@@ -21,6 +21,16 @@ $container = get_theme_mod( 'understrap_container_type' );
 	<?php wp_head(); ?>
 </head>
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-16HZ0GEDHX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-16HZ0GEDHX');
+</script>
+
 <body <?php body_class(); ?>>
 <?php do_action( 'wp_body_open' ); ?>
 <div class="site" id="page">

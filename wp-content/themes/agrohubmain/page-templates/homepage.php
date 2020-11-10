@@ -107,6 +107,9 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="ag-host">
 							<img src="wp-content/themes/agrohubmain/img/logo-kamtech.jpg" class="img-fluid" alt="Kamtech Logo">
 						</div>
+						<div class="ag-host">
+							<img src="wp-content/themes/agrohubmain/img/ASNET-Logo-Full.png" class="img-fluid" alt="ASNET Kenya Logo">
+						</div>
 					</div>
 				</div>
 				
@@ -235,6 +238,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 		</div><!-- .row end -->
 
 	</div><!-- #content -->
+	<?php echo do_shortcode('[metaslider id="73"]'); ?>
 
 	<div class="expo-attend">
 		<div class="container">

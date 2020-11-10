@@ -1,22 +1,4 @@
 # BEGIN WP Hide & Security Enhancer
-<IfModule mod_rewrite.c> 
-RewriteEngine On 
-RewriteBase /agroexpo/ 
-#WriteCheckString:1605016950_42461
-RewriteRule .* - [E=HTTP_MOD_REWRITE:On]
-
-RewriteRule ^zoobilee/(.+) /agroexpo/wp-content/themes/agrohubmain/$1 [L,QSA]
-
-RewriteRule ^ypyteels/(.+) /agroexpo/wp-content/plugins/$1 [L,QSA]
-
-RewriteRule ^studsygn/(.+) /agroexpo/wp-includes/$1 [L,QSA]
-
-RewriteRule ^whardils/(.+) /agroexpo/wp-content/uploads/$1 [L,QSA]
-
-RewriteRule ^zoaxeedo.php /agroexpo/wp-comments-post.php [L,QSA]
-
-RewriteRule ^mazoossu/(.+) /agroexpo/wp-content/$1 [L,QSA]
-</IfModule> 
 
 # END WP Hide & Security Enhancer
 
