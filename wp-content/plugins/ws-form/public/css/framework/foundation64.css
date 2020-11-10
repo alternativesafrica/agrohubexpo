@@ -1,0 +1,61 @@
+.wsf-form .wsf-tab-disabled {
+	pointer-events: none;
+}
+
+.wsf-form .wsf-tab-disabled.tabs-title > a {
+	color: #cacaca;
+	cursor: not-allowed;
+}
+
+.wsf-form .mce-btn.mce-active button,
+.wsf-form .mce-btn.mce-active:hover button,
+.wsf-form .mce-btn.mce-active i,
+.wsf-form .mce-btn.mce-active:hover i {
+	color: #000;
+}
+
+.wsf-form .wp-editor-wrap.tmce-active,
+.wsf-form .CodeMirror-wrap {
+	margin: 0 0 1rem;
+}
+
+.wsf-form .minicolors-input {
+	padding-left: 44px;
+}
+
+.wsf-form .minicolors-theme-foundation .minicolors-swatch {
+	border: 1px solid hsla(0,0%,4%,.25);
+	cursor: pointer;
+	height: 29px;
+	left: 5px;
+	top: 5px;
+	width: 29px;
+}
+
+.wsf-form .wsf-rating {
+	margin: 0 0 1rem !important;
+}
+
+.wsf-form .wsf-section-icon {
+	margin: 0 0 1rem !important;
+}
+
+.wsf-form .wsf-hidden {
+	display: none !important;
+}
+
+.wsf-form .select2-container--default .select2-selection--single,
+.wsf-form .select2-container--default .select2-selection--multiple {
+	border-radius: 0;
+}
+
+.wsf-form .input-group select ~ .select2-container {
+	flex: 1 1 auto;
+	min-width: 0;
+	position: relative;
+	width: 1% !important;
+}
+
+.wsf-form .input-group textarea.input-group-field {
+	white-space: normal;
+}

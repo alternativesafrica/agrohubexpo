@@ -22,11 +22,15 @@ if ( ! function_exists( 'understrap_scripts' ) ) {
 
 		wp_enqueue_script( 'jquery' );
 
+		wp_register_script( 'FontAwesome', 'https://kit.fontawesome.com/a65f23535a.js', null, null, true );
+		wp_enqueue_script('FontAwesome');
+		
 		$js_version = $theme_version . '.' . filemtime( get_template_directory() . '/js/theme.min.js' );
 		wp_enqueue_script( 'understrap-scripts', get_template_directory_uri() . '/js/theme.min.js', array(), $js_version, true );
 		if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 			wp_enqueue_script( 'comment-reply' );
 		}
+		
 	}
 } // endif function_exists( 'understrap_scripts' ).
 

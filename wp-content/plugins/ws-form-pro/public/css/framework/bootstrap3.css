@@ -1,0 +1,100 @@
+.wsf-form .col-xs-12,
+.wsf-form .col-sm-12,
+.wsf-form .col-md-12,
+.wsf-form .col-lg-12 {
+	float: left;
+}
+
+.wsf-form [data-type='textarea'] .mce-btn.mce-active button,
+.wsf-form [data-type='textarea'] .mce-btn.mce-active:hover button,
+.wsf-form [data-type='textarea'] .mce-btn.mce-active i,
+.wsf-form [data-type='textarea'] .mce-btn.mce-active:hover i {
+	color: #000;
+}
+
+.wsf-form .alert > *:last-child {
+	margin-bottom: 0;
+}
+
+.wsf-form.wsf-validated .form-control:invalid,
+.wsf-form.wsf-validated .form-control.wsf-invalid {
+	border-color: #a94442;
+}
+
+.wsf-form .wsf-invalid-feedback {
+	color: #a94442;
+	display: none;
+}
+
+.wsf-form.wsf-validated .form-control:invalid ~ .wsf-invalid-feedback,
+.wsf-form.wsf-validated [data-select-min-max]:invalid ~ .wsf-invalid-feedback,
+.wsf-form.wsf-validated input[type=checkbox]:invalid ~ .wsf-invalid-feedback,
+.wsf-form.wsf-validated [data-checkbox-min-max]:invalid ~ .wsf-invalid-feedback,
+.wsf-form.wsf-validated input[type=radio]:invalid ~ .wsf-invalid-feedback,
+.wsf-form.wsf-validated .form-control.wsf-invalid ~ .wsf-invalid-feedback {
+	display: block;
+}
+
+.wsf-form .wsf-hidden {
+	display: none !important;
+}
+
+.wsf-form .input-group {
+	align-items: stretch;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	width: 100%;
+}
+
+.wsf-form .input-group > .form-control,
+.wsf-form .input-group > .select2-container {
+	flex: 1 1 auto;
+	min-width: 0;
+	position: relative;
+	width: 1% !important;
+}
+
+.wsf-form .wsf-input-group-has-prepend > .form-control,
+.wsf-form .wsf-input-group-has-prepend > .form-control ~ .select2-container .select2-selection--single,
+.wsf-form .wsf-input-group-has-prepend > .form-control ~ .select2-container .select2-selection--multiple {
+	border-top-left-radius: 0 !important;
+	border-bottom-left-radius: 0 !important;
+}
+
+.wsf-form .wsf-input-group-has-append > .form-control,
+.wsf-form .wsf-input-group-has-append > .form-control ~ .select2-container .select2-selection--single,
+.wsf-form .wsf-input-group-has-append > .form-control ~ .select2-container .select2-selection--multiple {
+	border-top-right-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
+}
+
+.wsf-form .input-group-addon {
+	line-height: inherit;
+	width: auto;
+}
+
+.wsf-form .wsf-input-group-has-prepend > .form-control {
+	border-bottom-right-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+}
+
+.wsf-form .wsf-input-group-has-prepend.wsf-input-group-has-append > .form-control {
+	border-bottom-right-radius: 0 !important;
+	border-top-right-radius: 0 !important;
+}
+
+.wsf-form .wsf-input-group-has-prepend.wsf-input-group-has-append > .wsf-input-group-append {
+	border-bottom-right-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+}
+
+.wsf-form .wsf-input-group-has-append > .wsf-input-group-append {
+	border-left: 0;
+	border-bottom-right-radius: 4px !important;
+	border-top-right-radius: 4px !important;
+}
+
+.wsf-form .input-group > .help-block {
+	flex-basis: 100%;
+}

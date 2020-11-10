@@ -1,0 +1,147 @@
+.home {
+    .expo-hero {
+        background-image: url("../img/farm-storage-hero.jpg");
+        background-size: cover;
+        background-color: $expo-dark;
+        background-position: 0% 60%;
+        position: relative;
+        padding: 120px 0 0;
+        min-height: 700px;
+        @include media-breakpoint-down(xs) {
+            background-position: 50% 80%;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0; 
+            right: 0;
+            top: 0; 
+            bottom: 0;
+            background: rgba(2, 20, 5, 0.7),
+        }
+        .expo-cta-hero {
+            // border-radius: $spacing-xs;
+            padding: 0;
+            border: 1px solid $white;
+            @include media-breakpoint-down(xs) {
+                margin: 0 $spacing-sm $spacing-xxl;
+            }
+            .ag-cta-intro-date {
+                padding: $spacing-sm;
+                text-align: center;
+                text-transform: uppercase;
+                color: $white;
+                border-bottom: 1px solid $gray-300;
+                .ag-cta-date {
+                    font-weight: 800;
+                    margin: $spacing 0;
+                }
+            }
+            .ag-cta-intro-header {
+                padding: $spacing-sm;
+                text-align: center;
+                text-transform: uppercase;
+                color: $expo-yellow;
+                .ag-cta-intro-heading {
+                    font-weight: 300;
+                    margin: $spacing 0;
+                }
+            }
+            .ag-cta-hero {
+                padding: $spacing-lg;
+                border-top: 1px solid $gray-300;
+                text-align: center;
+                &:first-of-type {
+                    border-right: 1px solid $gray-300;
+                }
+                @include media-breakpoint-down(xs) {
+                    padding: $spacing-sm;
+                }
+                .hero-cta {
+                    width: 100%;
+                }
+            }
+            .ag-timer-hero {
+                border-top: 1px solid $gray-300;
+                padding: $spacing 0;
+                .ag-timer {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: $spacing-sm 0;
+                    @include media-breakpoint-down(xs) {
+                        border-left: 0;
+                    }
+                    .ag-countdown {
+                        margin: 0 auto;
+                        font-size: 2rem;
+                        font-weight: 500;
+                        text-align: center;
+                        >div {
+                            float: left;
+                            min-width: 80px;
+                            margin: 0px 10px;
+                            font-size: 3.5rem;
+                            font-weight: 700;
+                            line-height: 1.2;
+                            color: $white;
+                            @include media-breakpoint-down(xs) {
+                                min-width: 50px;
+                                margin: 0px 10px;
+                                font-size: 2rem;
+                            }
+                        }
+                        span {
+                            position: relative;
+                            display: block;
+                            font-size: 1rem;
+                            text-align: center;
+                            text-transform: uppercase;
+                            font-weight: 100;
+                            letter-spacing: 1px;
+                            @include media-breakpoint-down(xs) {
+                                font-size: 0.8rem;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
+            }
+            .ag-cta-intro {
+                padding: $spacing-sm;
+                font-size: 0.9rem;
+            }
+        }
+        .ag-header-logo {
+            // background: $white;
+            padding: $spacing-xl;
+            img {
+                width: 400px;
+            }
+            @include media-breakpoint-down(xs) {
+                height: 160px;
+                padding: $spacing-xl $spacing;
+            }
+        }
+        .ag-square-intro {
+            @include media-breakpoint-down(xs) {
+                padding: $spacing-lg $spacing-sm;
+            }
+            h1 {
+                color: $white;
+                font-weight: 800;
+                font-size: 3.5rem;
+                @include media-breakpoint-down(md) {
+                    font-size: 2.7rem !important;
+                }
+                @include media-breakpoint-down(xs) {
+                    font-size: 2rem !important;
+                }
+            }
+            h3 {
+                color: $white;
+            }
+        }
+        
+    }
+}

@@ -2,18 +2,17 @@
 
 body {
     font-family: $body-font;
-    margin-top: 80px;
 }
 
 h1 {
 	@include media-breakpoint-down(xs) {
 		font-size: 32px;
-	}
+    }
 }
 
 h2 {
 	@include media-breakpoint-down(xs) {
-		font-size: 20px;
+		font-size: 24px;
 	}
 }
 
@@ -23,87 +22,47 @@ h3 {
 	}
 }
 
+a {
+    font-weight: bold;
+}
+
 .btn-primary {
     border-radius: 0;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 700;
     color: $expo-dark;
     background-color: $expo-yellow !important;
+    border-color: $expo-yellow !important;
 }
-
-.navbar {
-    min-height: 80px;
-    .navbar-brand {
-        img {
-            width: 100px;
-        }
-    }
-    &.stickybg {
-        background-color: #ffffff !important;
-        -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 40, 86, 0.3);
-        -moz-box-shadow: 0px 0px 5px 0px rgba(0, 40, 86, 0.3);
-        box-shadow: 0px 0px 5px 0px rgba(0, 40, 86, 0.3);
-    }
-    .navbar-toggler {
-        border: 0;
-    }
-}
-
 
 
 .home {
-    .expo-hero {
-        background-image: url("../img/farm-storage-hero.jpg");
-        background-size: cover;
-        background-position: 0% 60%;
-        position: relative;
-        text-align: center;
-        padding: $spacing-lg 0;
-        &:before {
-            content: "";
-            position: absolute;
-            left: 0; 
-            right: 0;
-            top: 0; 
-            bottom: 0;
-            background: rgba(2, 20, 5, 0.5),
-        }
-        .ag-header-logo {
-            // background: $white;
-            padding: $spacing-xl;
-            img {
-                width: 520px;
-            }
-            @include media-breakpoint-down(xs) {
-                height: 160px;
-                padding: $spacing-xl $spacing;
-            }
-        }
-        .ag-square-intro {
-            padding: $spacing-lg;
-            @include media-breakpoint-down(xs) {
-                padding: $spacing-lg $spacing-sm;
-            }
-            h1 {
-                color: $white;
-                font-weight: 800;
-                font-size: 3.5rem;
-                @include media-breakpoint-down(md) {
-                    font-size: 2.7rem !important;
-                }
-                @include media-breakpoint-down(xs) {
-                    font-size: 2rem !important;
-                }
+    #wrapper-navbar{
+        margin-bottom: 0;
+    }
+    .wrapper {
+        padding: 0;
+        .content-area {
+            padding: 60px $spacing-lg;
+            .home-type-block {
+                padding: $spacing-md;
+                border: 5px solid $gray-300;
             }
         }
     }
     .expo-sectors {
+        .ag-section-title {
+            padding: $spacing-lg 0;
+            text-align: center;
+            font-weight: 800;
+        }
         .ag-home-squares {
             .ag-home-square {
                 position: relative;
                 overflow: hidden;
                 background: $expo-blue;
                 color: $white;
+                padding: 0;
                 &.ag-date {
                     width: 100%;
                     text-align: center;
@@ -113,19 +72,44 @@ h3 {
                     display: flex;
                     align-items: center;
                     justify-content: center;
+                    .ag-square-image-block {
+                        min-height: 100px;
+                    }
                     .ag-square-icon-block {
                         text-align: center;
-                        .ag-square-icon {
-                            display: block;
-                            text-align: center;
-                            width: 60px;
+                        .ag-icon {
+                            width: 90px;
                             margin: 0 auto;
+                            padding: $spacing-sm;
+                            border-radius: 50%;
+                            background-color: rgba(0, 0, 0, 0.1);
+                            .ag-square-icon {
+                                display: block;
+                                text-align: center;
+                                
+                            }
                         }
                         .ag-icon-title {
                             text-transform: uppercase;
                             margin-top: 10px;
-                            line-height: 16px;
+                            line-height: 1.5rem;
                             font-weight: 600;
+                            font-size: 1.4rem;
+                            @include media-breakpoint-down(xs) {
+                                font-size: 1.2rem;
+                                line-height: 1.7rem;
+                            }
+                        }
+                        .ag-block-title {
+                            text-transform: uppercase;
+                            margin-top: 10px;
+                            text-align: left;
+                            line-height: 2rem;
+                            font-weight: 700;
+                            @include media-breakpoint-down(xs) {
+                                font-size: 1.6rem;
+                                line-height: 1.4rem;
+                            }
                         }
                     }
                 }
@@ -177,7 +161,7 @@ h3 {
             .ag-host {
                 padding: $spacing-lg;
                 img {
-                    width: 100px;
+                    height: 125px;
                 }
             }
         }
@@ -195,6 +179,7 @@ h3 {
                 font-size: 2rem;
                 font-weight: 500;
                 text-align: center;
+                
                 >div {
                     float: left;
                     min-width: 120px;
@@ -204,7 +189,7 @@ h3 {
                     line-height: 1.2;
                     color: $expo-blue;
                     @include media-breakpoint-down(xs) {
-                        min-width: 60px;
+                        min-width: 50px;
                         margin: 0px 10px;
                         font-size: 2rem;
                     }
@@ -212,20 +197,34 @@ h3 {
                 span {
                     position: relative;
                     display: block;
-                    font-size: 17px;
+                    font-size: 1rem;
                     text-align: center;
                     text-transform: uppercase;
                     font-weight: 100;
                     letter-spacing: 1px;
+                    @include media-breakpoint-down(xs) {
+                        font-size: 0.8rem;
+                        font-weight: 600;
+                    }
                 }
             }
         }
     }
     .expo-attend {
-        background-image: url("../img/sunrise-farm-fields.jpg");
+        background-image: url("../img/tractor-aerial-green.jpg");
         background-color: $expo-blue;
         background-size: cover;
-        padding: $spacing-lg 0;
+        padding: $spacing-xl 0 $spacing-max;
+        position: relative;
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0; 
+            right: 0;
+            top: 0; 
+            bottom: 0;
+            background: rgba(2, 20, 5, 0.4);
+        }
         .ag-why-squares {
             .ag-why-square {
                 position: relative;
@@ -252,7 +251,7 @@ h3 {
                     position: absolute;
                     height: 100%;
                     width: 100%;
-                    padding: 20px;
+                    padding: $spacing-lg;
                     display: flex;
                     align-items: center;
                     justify-content: center;
@@ -280,23 +279,97 @@ h3 {
                 }
             }
         }
+        .section-heading {
+            font-weight: 800;
+            text-align: center;
+            padding: $spacing-lg 0;
+            color: $white;
+        }
     }
-    .section-heading {
-        font-weight: 800;
-        text-align: center;
-        padding: $spacing-lg 0;
-    }
+    
+    
 }
 
+.ag-geometric-long {
+    background-image: url("../img/ag-geometric-long.svg");
+    background-color: $expo-blue;
+    background-size: cover;
+    padding: $spacing-lg 0;
+}
 
-
-
-.navbar-nav {
-    .nav-link {
-        font-weight: 800;
-        font-size: 22px;
-        padding: 1rem !important;
+#wrapper-navbar{
+    margin-bottom: 110px;
+    @include media-breakpoint-down(sm) {
+		margin-bottom: 90px;
     }
+}
+.woocommerce {
+    .wrapper {
+        .content-area {
+            max-width: initial;
+            .product {
+                .product-title {
+                    font-weight: 700;
+                }
+            }
+            .price {
+                .amount {
+                    font-size: 3rem;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}
+.wrapper {
+    padding: 0;
+    .content-area {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 60px $spacing-md;
+        ul {
+            line-height: 1.5em;
+            margin: 5px 0 15px;
+            padding: 0;
+            li {
+                list-style: none;
+                position: relative;
+                padding: 0 0 0 20px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    background: $expo-blue; 
+                    left: 0;
+                    top: 9px;
+                    height: 3px; 
+                    width: 9px;
+                }
+                &::after { 
+                    content: ""; 
+                    position: absolute; 
+                    background: $expo-blue; 
+                    left: 3px; 
+                    top: 5px; 
+                    height: 11px; 
+                    width: 3px;
+                }
+            }
+        }
+        .entry-header {
+            .entry-title {
+                font-weight: 700;
+                color: $expo-blue;
+            }
+        }
+        .entry-content {
+            h2 {
+                font-weight: 600;
+                color: $expo-green;
+                margin: $spacing 0 $spacing-md;
+            }
+        }
+    }
+    
 }
 
 .text-bold {
@@ -308,6 +381,74 @@ h3 {
     .form-row {
         .content-area{
             margin: 0 auto;
+        }
+    }
+}
+#wrapper-footer-full {
+    background: $expo-dark;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $white;
+    .ag-footer-logo {
+        padding: $spacing-lg;
+        text-align: center;
+        img {
+            max-width: 300px;
+        }
+    }
+    .ag-cta-footer {
+        padding: $spacing-lg 0;
+        text-align: center;
+        @include media-breakpoint-down(xs) {
+            padding: $spacing-sm;
+        }
+        .footer-cta {
+            margin: 0 0 $spacing-xs;
+        }
+        h2 {
+            @include media-breakpoint-down(xs) {
+                font-size: 2rem;
+            }
+        }
+    }
+}
+#wrapper-footer {
+    background: $expo-dark;
+    color: $white;
+    padding: $spacing 0;
+    .site-footer {
+        ul {
+            &.quick-links {
+                a {
+                    color: $expo-lightblue;
+                }
+            }
+            &.social-buttons {
+                margin: $spacing-sm 0;
+                @include media-breakpoint-down(xs) {
+                    margin: $spacing-xl 0;
+                }
+                li {
+                    a {
+                        font-size: 20px;
+                        line-height: 40px;
+                        display: block;
+                        width: 40px;
+                        height: 40px;
+                        -webkit-transition: all 0.3s;
+                        -moz-transition: all 0.3s;
+                        transition: all 0.3s;
+                        color: #fff;
+                        border-radius: 100%;
+                        outline: 0;
+                        background-color: $gray-800;
+                        &:hover {
+                            background-color: $expo-yellow;
+                        }
+                    }
+                }
+            }
         }
     }
 }

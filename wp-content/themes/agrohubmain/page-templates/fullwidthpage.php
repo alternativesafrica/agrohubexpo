@@ -20,7 +20,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 
 <div class="wrapper" id="full-width-page-wrapper">
-
+	<div class="ag-geometric-long">
+	</div>
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
 		<div class="row">

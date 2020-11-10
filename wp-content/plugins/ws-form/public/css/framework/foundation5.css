@@ -1,0 +1,52 @@
+.wsf-form .wsf-tab-disabled {
+	pointer-events: none;
+}
+
+.wsf-form .wsf-tab-disabled.tab-title > a {
+	color: #cacaca;
+	cursor: not-allowed;
+}
+
+.wsf-form .mce-btn.mce-active button,
+.wsf-form .mce-btn.mce-active:hover button,
+.wsf-form .mce-btn.mce-active i,
+.wsf-form .mce-btn.mce-active:hover i {
+	color: #000;
+}
+
+.wsf-form .wp-editor-wrap.tmce-active,
+.wsf-form .CodeMirror-wrap {
+	margin: 0 0 1rem;
+}
+
+.wsf-form select[multiple] {
+	height: auto;
+}
+
+.wsf-form .wsf-rating {
+	margin: 0 0 1rem !important;
+}
+
+.wsf-form .wsf-section-icon {
+	margin: 0 0 1rem !important;
+}
+
+.wsf-form .wsf-hidden {
+	display: none !important;
+}
+
+.wsf-form .select2-container--default .select2-selection--single,
+.wsf-form .select2-container--default .select2-selection--multiple {
+	border-radius: 0;
+}
+
+.wsf-form .input-group select ~ .select2-container {
+	flex: 1 1 auto;
+	min-width: 0;
+	position: relative;
+	width: 1% !important;
+}
+
+.wsf-form .input-group textarea.input-group-field {
+	white-space: normal;
+}

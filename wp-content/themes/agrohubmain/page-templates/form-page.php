@@ -18,7 +18,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <div class="wrapper form-wrapper" id="full-width-page-wrapper">
 	<div class="ag-geometric-long">
-		<img src="wp-content/themes/agrohubmain/img/ag-geometric-long.svg" class="img-fluid" alt="Agrohub Expo">
 	</div>
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">

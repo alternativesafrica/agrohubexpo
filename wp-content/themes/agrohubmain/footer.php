@@ -27,7 +27,41 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 					<div class="site-info">
 
-						<?php understrap_site_info(); ?>
+					<div class="row text-center">
+						<div class="col-md-4 box">
+							<span class="copyright quick-links">&copy; Indo-Kenya Expo<script>document.write(new Date().getFullYear())</script>
+							</span>
+						</div>
+						<div class="col-md-4 box">
+							<ul class="list-inline social-buttons">
+							<li class="list-inline-item">
+								<a href="#">
+								<i class="fab fa-twitter"></i>
+							</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">
+								<i class="fab fa-linkedin-in"></i>
+							</a>
+							</li>
+							</ul>
+						</div>
+						<div class="col-md-4 box">
+							<ul class="list-inline quick-links">
+							<li class="list-inline-item">
+								<a href="#">Privacy Policy</a>
+							</li>
+							<li class="list-inline-item">
+								<a href="#">Terms of Use</a>
+							</li>
+							</ul>
+						</div>
+						</div>
 
 					</div><!-- .site-info -->
 
