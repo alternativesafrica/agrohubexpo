@@ -97,7 +97,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div> -->
 				
 				<div class="col-sm-12 ag-motto">
-					<h3>Two countries, a shared history, a timeless bond, have come together at the dawn of a new era, to present for the time ever, the<br/><span class="text-bold expo-blue">Indo Kenya</span> <span class="text-bold expo-green">Agro &</span> <span class="text-bold expo-yellow"> Food</span> <span class="text-bold expo-lightblue"> Processing Virtual Expo.</span></h3>
+					<h3>Two countries, a shared history, a timeless bond, have come together at the dawn of a new era, to present for the first time ever, the<br/><span class="text-bold expo-blue">Indo Kenya</span> <span class="text-bold expo-green">Agro &</span> <span class="text-bold expo-yellow"> Food</span> <span class="text-bold expo-lightblue"> Processing Virtual Expo.</span></h3>
 				</div>
 				<div class="col-md-12">
 					<div class="row ag-hosts">
