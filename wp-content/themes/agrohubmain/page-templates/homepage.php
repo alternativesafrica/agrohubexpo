@@ -100,15 +100,21 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<h3>Two countries, a shared history, a timeless bond, have come together at the dawn of a new era, to present for the time ever, the<br/><span class="text-bold expo-blue">Indo Kenya</span> <span class="text-bold expo-green">Agro &</span> <span class="text-bold expo-yellow"> Food</span> <span class="text-bold expo-lightblue"> Processing Virtual Expo.</span></h3>
 				</div>
 				<div class="col-md-12">
-					<div class="ag-hosts">
-						<div class="ag-host">
-							<img src="wp-content/themes/agrohubmain/img/logo-agrohub.svg" class="img-fluid" alt="Agrohub Logo">
+					<div class="row ag-hosts">
+						<div class="col-sm-4 col-6 ag-host">
+							<a href="http://alternatives.co.ke/" target="_blank">
+								<img src="wp-content/themes/agrohubmain/img/logo-agrohub.svg" class="img-fluid" alt="Agrohub Logo">
+							</a>
 						</div>
-						<div class="ag-host">
-							<img src="wp-content/themes/agrohubmain/img/logo-kamtech.jpg" class="img-fluid" alt="Kamtech Logo">
+						<div class="col-sm-4 col-6 ag-host">
+							<a href="https://www.kamtech.in/" target="_blank">
+								<img src="wp-content/themes/agrohubmain/img/logo-kamtech.jpg" class="img-fluid" alt="Kamtech Logo">
+							</a>
 						</div>
-						<div class="ag-host">
-							<img src="wp-content/themes/agrohubmain/img/ASNET-Logo-Full.png" class="img-fluid" alt="ASNET Kenya Logo">
+						<div class="col-sm-4 col-12 ag-host">
+							<a href="https://twitter.com/asnetkenya" target="_blank">
+								<img src="wp-content/themes/agrohubmain/img/ASNET-Logo-Full.png" class="img-fluid" alt="ASNET Kenya Logo">
+							</a>
 						</div>
 					</div>
 				</div>

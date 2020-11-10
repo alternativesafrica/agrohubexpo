@@ -164,8 +164,13 @@ p {
             justify-content: center;
             .ag-host {
                 padding: $spacing-lg;
+                text-align: center;
                 img {
                     height: 125px;
+                    width: auto;
+                    @include media-breakpoint-down(xs) {
+                        height: 95px;
+                    }
                 }
             }
         }
