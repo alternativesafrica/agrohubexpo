@@ -21,9 +21,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 	</div>
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
-		<div class="form-row">
 
-			<div class="row">
+			<div class="row form-row d-flex justify-content-center align-items-center">
 
 				<div class="col-md-12 content-area" id="primary">
 
@@ -47,7 +46,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div><!-- #primary -->
 
 			</div><!-- .row end -->
-		</div><!-- .form-row end -->
 
 	</div><!-- #content -->
 

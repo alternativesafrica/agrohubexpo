@@ -1,0 +1,2 @@
+<?php if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
+$environment_variable = '{"theme":{"folder_name":"agrohubmain","mapped_name":"zoobilee"},"allowed_paths":["\/Applications\/MAMP\/htdocs\/agroexpo\/wp-content\/themes"],"cache_path":"\/Applications\/MAMP\/htdocs\/agroexpo\/wp-content\/cache\/wph\/","wordpress_directory":"","site_relative_path":"\/agroexpo\/"}'; ?>

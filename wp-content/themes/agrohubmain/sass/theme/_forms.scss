@@ -1,7 +1,33 @@
-label {
-    &.wsf-label {
-        font-size: 0.9rem !important;
-        font-weight: 600 !important;
-        color: $expo-blue;
+.form-wrapper {
+    margin: 0 auto;
+    position: relative;
+    background-color: $gray-100;
+    .form-row {
+        .content-area {
+            max-width: 800px;
+            label {
+                &.wsf-label {
+                    font-size: 1rem !important;
+                    font-weight: 600 !important;
+                    color: $expo-blue;
+                }
+            }
+            
+            .wsf-section {
+                margin-bottom: $spacing-lg;
+                .wsf-grid {
+                    background: $white;
+                    padding: $spacing-lg $spacing-md $spacing $spacing-md;
+                    border: 3px solid $gray-300;
+                    border-radius: $spacing-xs;
+                }
+                legend {
+                    font-size: 1.5rem !important;
+                    font-weight: 600 !important;
+                    color: $expo-dark;
+                }
+            }
+        }
     }
 }
+

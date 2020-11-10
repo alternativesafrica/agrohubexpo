@@ -38,10 +38,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 					<div class="row no-gutters">
 						<div class="col-6 ag-cta-hero">
-							<a class="btn btn-primary btn-lg hero-cta" href="#" role="button">Delegate</a>
+							<a class="btn btn-primary btn-lg hero-cta" href="/register" role="button">Delegate</a>
 						</div>
 						<div class="col-6 ag-cta-hero">
-							<a class="btn btn-primary btn-lg hero-cta" href="#" role="button">Exhibitor</a>
+							<a class="btn btn-primary btn-lg hero-cta" href="/register" role="button">Exhibitor</a>
 						</div>
 						
 						<div class="col-sm-12 ag-timer-hero">
