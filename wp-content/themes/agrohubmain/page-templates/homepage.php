@@ -20,9 +20,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 		<div class="container">
 			<div class="row d-flex justify-content-center align-items-center">
 				<div class="col-sm-7">
-					<!-- <div class="ag-header-logo">
-						<img src="wp-content/themes/agrohubmain/img/expo-logo-white.svg" class="img-fluid" alt="Agrohub Expo">
-					</div> -->
 					<?php get_template_part( 'global-templates/hero' ); ?>
 					<div class="ag-square-intro">
 						<h1>Indo-Kenya Agro & Food Processing Virtual Expo</h1>
@@ -89,10 +86,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 			<div class="row">
 				<!-- <div class="col-md-12 ag-flags">
 					<div class="ag-flag">
-						<img src="wp-content/themes/agrohubmain/img/flag-Kenya.svg" class="img-fluid" alt="Kenya Flag">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/flag-Kenya.svg" class="img-fluid" alt="Kenya Flag">
 					</div>
 					<div class="ag-flag">
-						<img src="wp-content/themes/agrohubmain/img/flag-India.svg" class="img-fluid" alt="India Flag">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/flag-India.svg" class="img-fluid" alt="India Flag">
 					</div>
 				</div> -->
 				
@@ -103,17 +100,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 					<div class="row ag-hosts">
 						<div class="col-sm-4 col-6 ag-host">
 							<a href="http://alternatives.co.ke/" target="_blank">
-								<img src="wp-content/themes/agrohubmain/img/logo-agrohub.svg" class="img-fluid" alt="Agrohub Logo">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/logo-agrohub.svg" class="img-fluid" alt="Agrohub Logo">
 							</a>
 						</div>
 						<div class="col-sm-4 col-6 ag-host">
 							<a href="https://www.kamtech.in/" target="_blank">
-								<img src="wp-content/themes/agrohubmain/img/logo-kamtech.jpg" class="img-fluid" alt="Kamtech Logo">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/logo-kamtech.jpg" class="img-fluid" alt="Kamtech Logo">
 							</a>
 						</div>
 						<div class="col-sm-4 col-12 ag-host">
 							<a href="https://twitter.com/asnetkenya" target="_blank">
-								<img src="wp-content/themes/agrohubmain/img/ASNET-Logo-Full.png" class="img-fluid" alt="ASNET Kenya Logo">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/ASNET-Logo-Full.png" class="img-fluid" alt="ASNET Kenya Logo">
 							</a>
 						</div>
 					</div>
@@ -130,7 +127,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="ag-square-content">
 							<div class="ag-square-icon-block">
 								<div class="ag-icon">
-									<img src="wp-content/themes/agrohubmain/img/icons/iconChain-Fruits.svg" class="ag-square-icon" alt="Agrohub Expo">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icons/iconChain-Fruits.svg" class="ag-square-icon" alt="Agrohub Expo">
 								</div>
 								<p class="ag-icon-title">Fruits & Veg<br>Processing</p>
 							</div>
@@ -138,7 +135,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						</div>
 						<div class="ag-square-image-block">
 							<div class="ag-icon">
-								<img src="wp-content/themes/agrohubmain/img/home-veg-processing.jpg" class="ag-square-icon" alt="Agrohub Fruits Vegetable Processing">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/home-veg-processing.jpg" class="ag-square-icon" alt="Agrohub Fruits Vegetable Processing">
 							</div>
 						</div>
 					</div>
@@ -146,14 +143,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="ag-square-content">
 							<div class="ag-square-icon-block">
 								<div class="ag-icon">
-									<img src="wp-content/themes/agrohubmain/img/icons/iconChain-Dairy.svg" class="ag-square-icon" alt="Agrohub Expo">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icons/iconChain-Dairy.svg" class="ag-square-icon" alt="Agrohub Expo">
 								</div>
 								<p class="ag-icon-title">Milk & Dairy<br>Processing</p>
 							</div>
 						</div>
 						<div class="ag-square-image-block">
 							<div class="ag-icon">
-								<img src="wp-content/themes/agrohubmain/img/home-dairy-processing.jpg" class="ag-square-icon" alt="Agrohub Dairy Processing">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/home-dairy-processing.jpg" class="ag-square-icon" alt="Agrohub Dairy Processing">
 							</div>
 						</div>
 					</div>
@@ -165,14 +162,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="ag-square-content">
 							<div class="ag-square-icon-block">
 								<div class="ag-icon">
-									<img src="wp-content/themes/agrohubmain/img/icons/iconChain-DryFoods.svg" class="ag-square-icon" alt="Agrohub Expo">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icons/iconChain-DryFoods.svg" class="ag-square-icon" alt="Agrohub Expo">
 								</div>
 								<p class="ag-icon-title">Dry Foods<br>Processing</p>
 							</div>
 						</div>
 						<div class="ag-square-image-block">
 							<div class="ag-icon">
-								<img src="wp-content/themes/agrohubmain/img/home-dry-foods-processing.jpg" class="ag-square-icon" alt="Agrohub Dry Foods Processing">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/home-dry-foods-processing.jpg" class="ag-square-icon" alt="Agrohub Dry Foods Processing">
 							</div>
 						</div>
 					</div>
@@ -180,14 +177,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="ag-square-content">
 							<div class="ag-square-icon-block">
 								<div class="ag-icon">
-									<img src="wp-content/themes/agrohubmain/img/icons/iconChain-Beverage.svg" class="ag-square-icon" alt="Agrohub Expo">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icons/iconChain-Beverage.svg" class="ag-square-icon" alt="Agrohub Expo">
 								</div>
 								<p class="ag-icon-title">Beverage<br>Processing</p>
 							</div>
 						</div>
 						<div class="ag-square-image-block">
 							<div class="ag-icon">
-								<img src="wp-content/themes/agrohubmain/img/home-beverage-processing.jpg" class="ag-square-icon" alt="Agrohub Beverage Processing">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/home-beverage-processing.jpg" class="ag-square-icon" alt="Agrohub Beverage Processing">
 							</div>
 						</div>
 					</div>
@@ -195,14 +192,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<div class="ag-square-content">
 							<div class="ag-square-icon-block">
 								<div class="ag-icon">
-									<img src="wp-content/themes/agrohubmain/img/icons/iconChain-Storage.svg" class="ag-square-icon" alt="Agrohub Expo">
+									<img src="<?php echo get_template_directory_uri(); ?>/img/icons/iconChain-Storage.svg" class="ag-square-icon" alt="Agrohub Expo">
 								</div>
 								<p class="ag-icon-title">Storage<br>Facilities</p>
 							</div>
 						</div>
 						<div class="ag-square-image-block">
 							<div class="ag-icon">
-								<img src="wp-content/themes/agrohubmain/img/home-storage-facilities.jpg" class="ag-square-icon" alt="Agrohub Storage Facilities">
+								<img src="<?php echo get_template_directory_uri(); ?>/img/home-storage-facilities.jpg" class="ag-square-icon" alt="Agrohub Storage Facilities">
 							</div>
 						</div>
 					</div>

@@ -299,6 +299,79 @@ p {
     
 }
 
+.expo-sectors {
+    .ag-section-title {
+        padding: $spacing-lg 0;
+        text-align: center;
+        font-weight: 800;
+    }
+    .ag-home-squares {
+        .ag-home-square {
+            position: relative;
+            overflow: hidden;
+            background: $expo-blue;
+            color: $white;
+            padding: 0;
+            &.ag-date {
+                width: 100%;
+                text-align: center;
+            }
+            .ag-square-content {
+                padding: $spacing-xl $spacing-sm;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .ag-square-image-block {
+                    min-height: 100px;
+                }
+                .ag-square-icon-block {
+                    text-align: center;
+                    .ag-icon {
+                        width: 90px;
+                        margin: 0 auto;
+                        padding: $spacing-sm;
+                        border-radius: 50%;
+                        background-color: rgba(0, 0, 0, 0.1);
+                        .ag-square-icon {
+                            display: block;
+                            text-align: center;
+                            
+                        }
+                    }
+                    .ag-icon-title {
+                        text-transform: uppercase;
+                        margin-top: 10px;
+                        line-height: 1.5rem;
+                        font-weight: 600;
+                        font-size: 1.4rem;
+                        @include media-breakpoint-down(xs) {
+                            font-size: 1.2rem;
+                            line-height: 1.7rem;
+                        }
+                    }
+                    .ag-block-title {
+                        text-transform: uppercase;
+                        margin-top: 10px;
+                        text-align: left;
+                        line-height: 2rem;
+                        font-weight: 700;
+                        @include media-breakpoint-down(xs) {
+                            font-size: 1.6rem;
+                            line-height: 1.4rem;
+                        }
+                    }
+                }
+            }
+            &.ag-clear-box {
+                background: transparent;
+                @include media-breakpoint-down(xs) {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
 .ag-geometric-long {
     background-image: url("../img/ag-geometric-long.svg");
     background-color: $expo-blue;
