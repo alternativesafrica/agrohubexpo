@@ -388,7 +388,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 	                        <h6><a href="#">Saksham Gupta</a></h6>
 						</div>
 						<div class="card-footer">
-	                        <p class="card-text"><span>Kamtech Associates</span></p>
+	                        <p class="card-text"><span>CTO,</span> Kamtech Associates</p>
 	                    </div>
 	                </div>
 				</div>
