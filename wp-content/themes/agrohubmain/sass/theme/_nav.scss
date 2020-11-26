@@ -102,7 +102,6 @@
             font-weight: 800;
             font-size: 22px;
             padding: 1rem !important;
-            color: $white !important;
             @include media-breakpoint-down(xs) {
                 color: $expo-blue;
             }
@@ -120,7 +119,19 @@
         box-shadow: 0px 0px 5px 0px rgba(0, 40, 86, 0.3);
         background: $white;
         .nav-link {
-            color: $expo-blue !important;
+            color: $expo-blue;
+        }
+        .navbar-collapse {
+            &.show {
+                .nav-link {
+                    color: $expo-blue !important;
+                }
+                .active {
+                    .nav-link {
+                        color: $expo-yellow !important;
+                    }
+                }
+            }
         }
     }
     &.stickybg {
@@ -148,6 +159,18 @@
             }
             .nav-link {
                 color: $white;
+            }
+            .navbar-collapse {
+                &.show {
+                    .nav-link {
+                        color: $expo-blue !important;
+                    }
+                    .active {
+                        .nav-link {
+                            color: $expo-yellow !important;
+                        }
+                    }
+                }
             }
         }
         &.stickybg {
