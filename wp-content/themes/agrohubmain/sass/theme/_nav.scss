@@ -102,7 +102,7 @@
             font-weight: 800;
             font-size: 22px;
             padding: 1rem !important;
-            color: $white;
+            color: $white !important;
             @include media-breakpoint-down(xs) {
                 color: $expo-blue;
             }

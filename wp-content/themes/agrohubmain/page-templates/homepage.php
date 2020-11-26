@@ -293,7 +293,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 <script type ="text/javascript">
 	window.onload =  (function($) {
 		// Specify the deadline date
-		const deadlineDate = new Date('November 27, 2020 23:59:59').getTime();
+		const deadlineDate = new Date('November 27, 2020 09:00:00 GMT+03:00').getTime();
 
 		// Cache all countdown boxes into consts
 		const countdownDays = document.querySelector('.ag-countdown-days .number');
