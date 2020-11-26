@@ -306,6 +306,17 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col-md-3 col-lg-2 col-6">
 	                <div class="card border-0 transform-on-hover">
+						<img src="<?php echo get_template_directory_uri(); ?>/img/speakers/expo-speaker-Dr-Jeet-Singh-Sandhu.jpg" alt="Prof J S Sandhu" class="card-img-top">
+	                    <div class="card-body">
+	                        <h6><a href="#">Prof J S Sandhu</a></h6>
+						</div>
+						<div class="card-footer">
+	                        <p class="card-text"><span>VC,</span> Sri Karan Narendra Agriculture University Jobner, India</p>
+	                    </div>
+	                </div>
+				</div>
+				<div class="col-md-3 col-lg-2 col-6">
+	                <div class="card border-0 transform-on-hover">
 						<img src="<?php echo get_template_directory_uri(); ?>/img/speakers/expo-speaker-Fred-Kiio.jpg" alt="Fred Kiio" class="card-img-top">
 	                    <div class="card-body">
 	                        <h6><a href="#">Fred Kiio</a></h6>
