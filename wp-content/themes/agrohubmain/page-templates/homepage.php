@@ -34,41 +34,12 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<h2 class="ag-cta-intro-heading">Get your Virtual Pass</h2>
 					</div>
 					<div class="row no-gutters">
-						<div class="col-6 ag-cta-hero">
-							<a class="btn btn-primary btn-lg hero-cta" href="/register" role="button">Delegate</a>
+						<div class="col-12 ag-cta-hero">
+							<a class="btn btn-primary btn-lg hero-cta" href="/register" role="button">Register for Day 2</a>
 						</div>
-						<div class="col-6 ag-cta-hero">
-							<a class="btn btn-primary btn-lg hero-cta" href="/register" role="button">Exhibitor</a>
-						</div>
+
 						
-						<div class="col-sm-12 ag-timer-hero">
-							<div class="ag-timer">
-								<!-- countdown -->
-								<div class="ag-countdown">
-									<div class="ag-countdown-days">
-										<div class="number"></div>
-										<span class>Days</span>
-									</div>
-
-									<div class="ag-countdown-hours">
-										<div class="number"></div>
-										<span class>Hours</span>
-									</div>
-
-									<div class="ag-countdown-minutes">
-										<div class="number"></div>
-										<span class>Minutes</span>
-									</div>
-
-									<div class="ag-countdown-seconds">
-										<div class="number"></div>
-										<span class>Seconds</span>
-									</div>
-								</div>
-								<!-- countdown -->
-							</div>
-							
-						</div>
+						
 						
 					</div>
 				</div>
