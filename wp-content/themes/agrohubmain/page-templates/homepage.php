@@ -34,7 +34,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						<h2 class="ag-cta-intro-heading">Free Virtual Pass</h2>
 					</div>
 					<div class="row no-gutters">
-						<div class="col-6 ag-cta-hero">
+						<div class="col-12 ag-cta-hero">
 							<a class="btn btn-primary btn-lg hero-cta" href="http://virtual.agrohubexpo.com role="button">Enter Virtual Expo</a>
 						</div>
 
