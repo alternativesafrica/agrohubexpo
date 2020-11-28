@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</div>
 					<div class="row no-gutters">
 						<div class="col-12 ag-cta-hero">
-							<a class="btn btn-primary btn-lg hero-cta" href="http://virtual.agrohubexpo.com role="button">Enter Virtual Expo</a>
+							<a class="btn btn-primary btn-lg hero-cta" href="http://virtual.agrohubexpo.com">Enter Virtual Expo</a>
 						</div>
 
 					</div>
