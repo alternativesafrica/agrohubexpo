@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col-sm-5 expo-cta-hero">
 					<div class="ag-cta-intro-date">
-						<h2 class="ag-cta-date">November 27-28, 2020</h2>
+						<h2 class="ag-cta-date">Now open till Sunday, 29 November</h2>
 					</div>
 					<div class="ag-cta-intro-header">
 						<h2 class="ag-cta-intro-heading">Free Virtual Pass</h2>
