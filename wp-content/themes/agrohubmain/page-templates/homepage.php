@@ -28,14 +28,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 				</div>
 				<div class="col-sm-5 expo-cta-hero">
 					<div class="ag-cta-intro-date">
-						<h2 class="ag-cta-date">Now open till Sunday, 29 November</h2>
+						<h2 class="ag-cta-date">The expo is now closed</h2>
 					</div>
 					<div class="ag-cta-intro-header">
-						<h2 class="ag-cta-intro-heading">Free Virtual Pass</h2>
+						<h2 class="ag-cta-intro-heading">Want to know about the next one?</h2>
 					</div>
 					<div class="row no-gutters">
 						<div class="col-12 ag-cta-hero">
-							<a class="btn btn-primary btn-lg hero-cta" href="http://virtual.agrohubexpo.com">Enter Virtual Expo</a>
+							<a class="btn btn-primary btn-lg hero-cta" href="/register">Register you interest</a>
 						</div>
 
 					</div>
